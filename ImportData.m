@@ -83,7 +83,7 @@ if exist('MODELHANDLER','var')
     save(matFileName, 'MODELHANDLER', '-append');
 end
   
-destinationFolder = '../NoAssistance_Debug_PEM';
+destinationFolder = '../SCANeR_matData';
 copyfile(matFileName, destinationFolder);
 delete(matFileName)
     
