@@ -82,6 +82,12 @@ end
 if exist('MODELHANDLER','var')
     save(matFileName, 'MODELHANDLER', '-append');
 end
+if exist('Assistance', 'var')
+    save(matFileName, 'Assistance', '-append');
+end
+if exist('VehicleRoadModel', 'var')
+    save(matFileName, 'VehicleRoadModel', '-append');
+end
   
 destinationFolder = '../SCANeR_matData';
 copyfile(matFileName, destinationFolder);
